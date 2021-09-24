@@ -1,1 +1,19 @@
 /* styles go here */
+.form-field {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.form-field2 {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.block {
+  margin: 10px;
+}
+
+.button {
+  margin: 10px;
+}

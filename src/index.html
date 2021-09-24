@@ -11,7 +11,160 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="#"
+      method="POST"
+      onsubmit="onSubmit()"
+      class="block"
+    >
+      <label for="Sname" class="form-field">
+        Surname:
+        <input type="text"
+          id="Sname"
+          autocomplete="off"
+        >
+      </label>
+
+      <label for="Name" class="form-field">
+        Name:
+        <input type="text"
+          id="Name"
+          autocomplete="off"
+        >
+      </label>
+
+      <label for="Date" class="form-field">
+        How old are you?
+        <input type="number"
+          value="12"
+          min="0"
+          max="100"
+          id="Date"
+          >
+      </label>
+
+      <label for="birth" class="form-field">
+        Full date of birth:
+        <input type="date" id="birth">
+      </label>
+
+      <label for="agree" class="form-field">
+        I accept the term of the agreement:
+        <input type="checkbox"
+          id="agree"
+          required
+        >
+      </label>
+    </form>
+
+    <form action="#"
+      method="POST"
+      onsubmit="onSubmit()"
+      class="block"
+    >
+      <label for="Email" class="form-field">
+        Email:
+        <input type="email"
+          placeholder="email@example.com"
+          id="Email"
+          required
+        >
+      </label>
+
+      <label for="password" class="form-field">
+        Password:
+        <input type="password"
+          id="password"
+          required
+          minlength="8"
+          maxlength="16"
+        >
+      </label>
+    </form>
+
+    <form action="#"
+      method="POST"
+      onsubmit="onSubmit()"
+      class="block"
+    >
+
+      <div class="form-field2">
+        Do you love cats?
+
+        <label for="catsy" class="form-field2">
+          <input type="radio"
+            id="catsy"
+            name="cats"
+            value="y"
+            checked
+          >
+          Yes
+        </label>
+
+        <label for="catsn" class="form-field2">
+          <input type="radio"
+            id="catsn"
+            name="cats"
+            value="n"
+          >
+          No
+        </label>
+      </div>
+
+      <label for="color" class="form-field">
+        What is your favorite color?
+        <input type="color" id="color">
+      </label>
+
+      <label for="gotobed" class="form-field">
+        What time do you go to bed?
+        <input type="time"
+          step="1"
+          id="gotobed"
+        >
+      </label>
+
+      <label for="cars" class="form-field">
+        What are your favorite brand of cars?
+        <select id="cars"
+          name="cars"
+          multiple
+        >
+          <option value="BMW">BMW</option>
+          <option value="Audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </label>
+
+      <label for="rate" class="form-field">
+        How do you rate our work?
+        <input type="range"
+          id="rate"
+          name="rate"
+        >
+      </label>
+    </form>
+
+    <form action="#"
+      method="POST"
+      onsubmit="onSubmit()"
+      class="block"
+    >
+      <label for="comments" class="form-field">
+        Comments:
+        <textarea id="comments" name="comments"></textarea>
+      </label>
+
+      <label for="recommend" class="form-field">
+        Whould you recommend us?
+        <select id="recommend" name="recommend">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+    </form>
+
+    <button type="submit" class="button">Submit</button>
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
