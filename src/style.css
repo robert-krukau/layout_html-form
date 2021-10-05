@@ -1,19 +1,16 @@
-/* styles go here */
-.form-field {
-  display: block;
-  font-size: 16px;
-  padding: 5px;
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.form-field2 {
-  font-size: 16px;
-  margin: 5px;
+fieldset {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
 }
 
-.block {
-  margin: 10px;
-}
-
-.button {
-  margin: 10px;
+.form__class {
+  margin-bottom: 10px;
 }
